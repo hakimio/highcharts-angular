@@ -1,10 +1,4 @@
 {
-  "name": "highcharts-angular-project",
-  "private": true,
-  "description": "Project to develop the Highcharts component for Angular. See the ./highcharts-angular folder for published project.",
-  "version": "0.0.0",
-  "license": "SEE LICENSE IN <LICENSE>",
-  "author": "Black Label <start@blacklabel.pl> (http://blacklabel.pl)",
   "scripts": {
     "ng": "ng",
     "start": "node tasks/build.js && ng serve --open",
@@ -14,46 +8,40 @@
     "release": "cd ./highcharts-angular && standard-version && cd ../ && node tasks/build.js && node tasks/release.js",
     "e2e": "ng e2e"
   },
-  "dependencies": {
-    "@angular/animations": "11.0.5",
-    "@angular/common": "11.0.5",
-    "@angular/compiler": "11.0.5",
-    "@angular/core": "11.0.5",
-    "@angular/forms": "11.0.5",
-    "@angular/platform-browser": "11.0.5",
-    "@angular/platform-browser-dynamic": "11.0.5",
-    "@angular/router": "11.0.5",
-    "@highcharts/map-collection": "^1.1.3",
-    "core-js": "^3.8.1",
-    "highcharts": "^9.0.0",
-    "highcharts-custom-events": "^3.0.10",
-    "jquery": "^3.5.0",
-    "proj4": "^2.6.3",
-    "rxjs": "^6.5.4",
-    "tslib": "^2.0.0",
-    "zone.js": "~0.10.2"
+  "name": "highcharts-angular",
+  "description": "Highcharts component for Angular.",
+  "version": "2.10.0",
+  "license": "SEE LICENSE IN <LICENSE>",
+  "author": "Black Label <start@blacklabel.pl> (http://blacklabel.pl)",
+  "bugs": {
+    "url": "https://github.com/highcharts/highcharts-angular/issues"
   },
-  "devDependencies": {
-    "@angular-devkit/build-angular": "~0.1100.5",
-    "@angular/cli": "11.0.5",
-    "@angular/compiler-cli": "11.0.5",
-    "@types/jasmine": "2.8.8",
-    "@types/jasminewd2": "2.0.3",
-    "@types/node": "^12.19.9",
-    "codelyzer": "^6.0.0",
-    "jasmine-core": "~3.5.0",
-    "jasmine-spec-reporter": "~5.0.0",
-    "karma": "~5.1.1",
-    "karma-chrome-launcher": "~3.1.0",
-    "karma-coverage-istanbul-reporter": "~3.0.2",
-    "karma-jasmine": "~4.0.0",
-    "karma-jasmine-html-reporter": "^1.5.0",
-    "ng-packagr": "^11.0.3",
-    "node-sass": "^4.12.0",
-    "protractor": "~7.0.0",
-    "standard-version": "^8.0.1",
-    "ts-node": "^8.6.2",
-    "tslint": "~6.1.0",
-    "typescript": "4.0.5"
-  }
+  "homepage": "https://github.com/highcharts/highcharts-angular#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/highcharts/highcharts-angular"
+  },
+  "keywords": [
+    "highcharts",
+    "highstock",
+    "highmaps",
+    "angular"
+  ],
+  "peerDependencies": {
+    "@angular/common": ">=6.0.0",
+    "@angular/core": ">=6.0.0",
+    "highcharts": ">=6.0.0",
+    "typescript": ">=3.8.2"
+  },
+  "dependencies": {
+    "tslib": "^2.0.0"
+  },
+  "main": "dist/highcharts-angular/bundles/highcharts-angular.umd.js",
+  "module": "dist/highcharts-angular/fesm2015/highcharts-angular.js",
+  "es2015": "dist/highcharts-angular/fesm2015/highcharts-angular.js",
+  "esm2015": "dist/highcharts-angular/esm2015/highcharts-angular.js",
+  "fesm2015": "dist/highcharts-angular/fesm2015/highcharts-angular.js",
+  "typings": "dist/highcharts-angular/highcharts-angular.d.ts",
+  "metadata": "dist/highcharts-angular/highcharts-angular.metadata.json",
+  "sideEffects": false
 }
